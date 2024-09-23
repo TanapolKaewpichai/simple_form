@@ -1,40 +1,93 @@
 body {
-    background-color: rgb(237, 255, 255);
+  background-color: rgb(237, 255, 255);
 }
 header {
-    text-align: center;
+  text-align: center;
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 form {
-    width: 30rem;
-    margin: 3rem auto;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 6px;
+  width: 30rem;
+  margin: 3rem auto;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-input,textarea,select {
-    width: 100%;
-    display: block;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
+section {
+  margin-bottom: 1rem;
+}
+
+label {
+  color: rgb(6, 6, 99);
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border: 1px solid rgb(152, 159, 184);
 }
 
 textarea {
-    resize: none;
+  resize: none;
+}
 
+input:focus,
+textarea:focus {
+  background-color: rgb(212, 212, 244);
+}
+
+button {
+  border: 1px solid rgb(51, 67, 100);
+  padding: 0.5re, 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-filled {
+  background-color: rgb(51, 67, 100);
+  color: white;
+}
+
+.btn-empty {
+  background-color: transparent;
+  color: rgb(51, 67, 100);
+}
+
+.btn-filled:hover {
+  background-color: rgb(69, 89, 129);
+  border-color: rgb(69, 89, 129);
+}
+
+.btn-empty:hover {
+  background-color: rgb(208, 215, 230);
 }
 
 .form-control-inline {
-    display: flex;
+  display: flex;
 }
 
-.form-control-inline input{
-    width: auto;
+.form-control-inline label {
+  margin: 0;
+}
+
+.form-control-inline input {
+  width: auto;
+}
+
+#form-action {
+    text-align: right;
 }
